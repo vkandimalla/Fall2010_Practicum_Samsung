@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+  
+ <!-- Servlets -->
+  <servlet>
+    <servlet-name>rpcServlet</servlet-name>
+    <servlet-class>com.samsung.appengine.web.server.RemindMeServlet</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>c2dmRetryServlet</servlet-name>
+    <servlet-class>com.samsung.android.c2dm.server.C2DMRetryServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>rpcServlet</servlet-name>
+    <url-pattern>/remindmerpc</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>c2dmRetryServlet</servlet-name>
+    <url-pattern>/tasks/c2dm</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>Remindme_appengine.html</welcome-file>
+  </welcome-file-list>
+  
+    <!-- Only allow admins (and the task queue itself) to run tasks. -->
+  <security-constraint>
+    <web-resource-collection>
+     <web-resource-name>tasks</web-resource-name>
+      <url-pattern>/tasks/*</url-pattern>
+    </web-resource-collection>
+    <auth-constraint>
+      <role-name>admin</role-name>
+    </auth-constraint>
+  </security-constraint>
+
+</web-app>

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/1/trunk/JumpNoteWeb/c2dm/com/google/android/c2dm/server
+END
+C2DMRetryServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1/trunk/JumpNoteWeb/c2dm/com/google/android/c2dm/server/C2DMRetryServlet.java
+END
+C2DMConfigLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/1/trunk/JumpNoteWeb/c2dm/com/google/android/c2dm/server/C2DMConfigLoader.java
+END
+C2DMessaging.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/1/trunk/JumpNoteWeb/c2dm/com/google/android/c2dm/server/C2DMessaging.java
+END
+C2DMConfig.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/1/trunk/JumpNoteWeb/c2dm/com/google/android/c2dm/server/C2DMConfig.java
+END
