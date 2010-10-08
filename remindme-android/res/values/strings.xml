@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, Alerts!</string>
+    <string name="app_name">RemindMe</string>
+    <string name="local_notes">Local notes</string>
+	<string name="menu_account_settings">Account settings</string>
+    <string name="menu_account_list">Accounts</string>
+    <string name="account_list_status_notes">%d Alerts</string>
+    <string name="account_list_status_sync_disabled">Automatic sync disabled</string>
+</resources>
